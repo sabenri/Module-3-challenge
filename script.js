@@ -1,6 +1,8 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-
+addEmployeesBtn.addEventListener('click', () => {
+  alert('Button was clicked');
+})
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
