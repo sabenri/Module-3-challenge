@@ -7,21 +7,28 @@ const collectEmployees = function() {
   let firstName = prompt('employee first name');
 let lastName = prompt('employee last name');
 let salary = prompt('employee salary');
-const employees = {
+const employee = {
+  firstName: firstName,
+  lastName: lastName, 
+  salary : salary,
 
 }
-
-
+employees.push (employee)
+displayEmployees(employees)
 }
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  // get salary total
+// divid salary by total off info 
+
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+  
 }
 
 /*
