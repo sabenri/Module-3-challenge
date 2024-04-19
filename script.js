@@ -1,15 +1,17 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-addEmployeesBtn.addEventListener('click', () => {
-
-})
+const employees= []
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-  let foo = prompt('employee first name');
-let foo2 = prompt('employee last name');
-let foo3 = prompt('employee salary');
-let bar = confirm('confirm');
+  let firstName = prompt('employee first name');
+let lastName = prompt('employee last name');
+let salary = prompt('employee salary');
+const employees = {
+
+}
+
+
 }
 
 // Display the average salary
@@ -75,7 +77,7 @@ const trackEmployeeData = function() {
   getRandomEmployee(employees);
 
   employees.sort(function(a,b) {
-    if (a.lastName < b.lastName) {
+    if (a.firstName < b.lastName) {
       return -1;
     } else {
       return 1;
