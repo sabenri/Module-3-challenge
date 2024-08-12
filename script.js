@@ -14,15 +14,21 @@ const employee = {
 
 }
 employees.push (employee)
-displayEmployees(employees)
+if (confirm("Enter new employee?")==true){
+  collectEmployees();
+} 
+else{
+  displayEmployees(employees)
+}
+
 }
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
 }
 const getRandomEmployee = function(employeesArray) {
-  const randomIndex = Math.floor(Math.random() employees.length);
-  const randomEmployee = employeesArray[randomIndex];
+  const randomIndex = Math.floor(Math.random() * employees.length);
+  const randomEmployee = employeesArray[randomIndex]
   console.log('Random Employee:', randomEmployee);
 }
 
